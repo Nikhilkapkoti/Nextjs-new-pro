@@ -1,0 +1,76 @@
+main {
+  max-width: 1160px;
+  margin-top: 0px;
+  margin:  auto;
+  padding: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.booba h2{
+  margin-top: 100px;
+}
+
+.service-image {
+  width: 50%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+
+.services-container {
+  display: flex; /* Change to flex */
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 1.75rem; /* Space between cards */
+  padding: 0 1rem 2rem;
+  flex-grow: 1;
+}
+
+.service-card {
+  margin-top: 40px;
+  max-height: min-content;
+  border: 3px solid #764ba2;
+  border-radius: 10px;
+  padding: 4rem; /* Reduced padding */
+  box-shadow: 0 8px 24px rgba(184, 127, 241, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  flex: 1 1 280px; /* Allow cards to grow and shrink */
+  min-width: 280px; /* Minimum width for cards */
+}
+
+.service-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Reduced margin */
+  font-size: 1.25rem; /* Reduced font size */
+}
+
+.service-card p {
+  flex-grow: 1;
+  font-size: 0.9rem; /* Reduced font size */
+  line-height: 1.4; /* Adjust line height for better spacing */
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px #764ba2;
+}
+
+
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+  .services-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    gap: 1rem;
+  }
+  .service-card {
+    padding: 1rem;
+  }
+}

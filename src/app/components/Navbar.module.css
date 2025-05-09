@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f5ebeb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo a {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    margin-left: 1.5rem;
+  }
+  
+  .navLinks li a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks li a:hover {
+    color: #00f37e;
+  }
+  
+  .darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: inherit;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .darkModeToggle:hover {
+    color: #31c78b;
+  }
+  
+  /* Dark mode styles */
+  
+  .dark-mode {
+    background-color: #1a1a1a; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+}
+  
+  .dark-mode .navbar {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+  }
+  
+  .dark-mode .navbar a {
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .navbar a:hover {
+    color: #31c78b;
+  }

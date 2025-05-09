@@ -1,0 +1,174 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .proj h2 {
+    margin-top: 20px;
+  }
+  
+  .project-image {
+    width: 50%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .pogo-box {
+    position: relative; /* Position relative to contain the absolute overlay */
+    height: 260px;
+    width: 70px;
+    flex: 1;
+    margin: 0 10px;
+    padding: 0;
+    border: 3px solid #764ba2;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pogo-box img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+.pogo-box:hover { transform: translateY(-10px); /* Lift up effect */ }
+
+.overlay {
+  border: 2px solid #764ba2;
+  height: 70px;
+  width: 210px;
+  position: absolute;
+  bottom: 20;             /* Position to the bottom */
+  left: 20;
+  right: 20;
+  padding: 10px;        /* Add padding for spacing */
+  background-color: rgb(255, 255, 255); /* Slightly transparent background */
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: left;   /* Center the text */
+  justify-content:left;
+  opacity: 1;            /* Keep it visible */
+  transition: opacity 0.3s ease; /* Transition effect */
+  border-radius: 10px;   /* Rounded corners */
+  text-align: left;    /* Center align text */
+}
+
+.pogo-box h4 {
+  font-weight: 550;
+  margin: 0;            /* Remove margin for header */
+  font-size: 1rem;    /* Font size can be adjusted as needed */
+}
+
+.pogo-box p {
+  margin: 0;            /* Remove margin for paragraph */
+  font-size: 0.8rem;    /* Adjusted font size for better readability */
+  font-weight: 400;
+}
+
+.action-button {
+  border: 2px solid #764ba2;
+  margin-left: auto; /* Pushes the button to the right */
+  margin-top: -15px; /* Adjust this value to lift the button */
+  background: linear-gradient(45deg, #ffffff, #ffffff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;   /* Font size */
+  padding: 8px 15px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(37, 117, 252, 0.4);
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+
+.action-button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.6);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.action-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(37, 117, 252, 0.3);
+}
+
+
+
+
+    .btt {
+        text-align: center;
+        margin: 20px 0;
+      }
+      
+      .bttn {
+        margin-top: 20px;
+        display: inline-block;
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 12px 30px;
+        border-radius: 40px;
+        box-shadow: 0 6px 12px rgba(37, 117, 252, 0.4);
+        transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        user-select: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      .bttn:hover {
+        background: linear-gradient(45deg, #2575fc, #6a11cb);
+        box-shadow: 0 8px 20px rgba(37, 117, 252, 0.6);
+        transform: translateY(-2px);
+        outline: none;
+      }
+      
+      .bttn:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 10px rgba(37, 117, 252, 0.3);
+      }
+      
+  /* Responsive adjustments for smaller devices */
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+    .projects-container {
+      flex-direction: column; /* Stack cards vertically on small screens */
+      gap: 1rem; /* Space between cards */
+    }
+    .project-card {
+      padding: 1.25rem; /* Reduced padding for smaller screens */
+    }
+    .project-image {
+      width: 100%; /* Full width for images on small screens */
+    }
+    .bttn {
+        width: 80%;
+        font-size: 1rem;
+        padding: 14px 0;
+        border-radius: 24px;
+    }
+        .overlay {
+            font-size: 0.9rem; /* Slightly smaller font on small screens */
+        }
+    
+    
+  }

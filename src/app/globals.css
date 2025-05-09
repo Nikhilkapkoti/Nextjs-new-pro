@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* App.css */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f5f5f5 !important;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode a {
+  color: #f5f5f5;
+}
+
+.dark-mode a:hover {
+  color: #31c78b;
+}

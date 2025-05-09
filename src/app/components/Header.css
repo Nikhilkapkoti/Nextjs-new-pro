@@ -1,0 +1,153 @@
+/* Existing styles... */
+
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Light mode text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 20px;
+    text-align: center;
+}
+body{
+    background-color: #f5ebeb;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1a1a1a; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 2rem; /* Moved padding here */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.header-image {
+    width: 200px;
+    height: 200px;
+    margin-top: -25px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 2.5px solid #764ba2; /* Optional border color to match theme */
+    box-shadow: 0 4px 8px rgba(118, 75, 162, 0.3);
+    display: block; /* Ensure the image is a block element */
+}
+
+
+h1 {
+    font-size: 2.8rem;           /* Slightly larger for emphasis */
+    margin-bottom: 0.5rem;
+    font-weight: 800;            /* Bolder */
+    letter-spacing: 2px;         /* More spaced out */
+    font-family:  Georgia, Tahoma, Verdana; /* Custom font */
+    background: linear-gradient(90deg, #764ba2, #667eea 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 8px rgba(118, 75, 162, 0.1);
+    transition: color 0.3s;
+}
+
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #ffffff; /* Light mode button background */
+    color: #764ba2; /* Light mode button text color */
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    min-width: 130px;
+    display: inline-block;
+    border: 2px solid #764ba2;
+}
+
+.btn:hover {
+    
+  transform: translateY(-4px);
+    background-color: #764ba2; /* Light mode button hover */
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+.btn-secondary {
+    
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #764ba2;
+    border: 2px solid rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    
+  transform: translateY(-4px);
+    background-color: white;
+    color: #764ba2;
+    border-color: #764ba2;
+}
+
+/* Dark Mode Button Styles */
+/* Dark Mode Button Styles */
+.dark-mode .btn {
+    background-color: #22223b; /* New dark background */
+    color: #764ba2;            /* New light text color */
+    border: 2px solid #f2e9e4; /* Optional: lighter border for contrast */
+}
+
+.dark-mode .btn:hover {
+    background-color: #4a4e69; /* Slightly lighter on hover */
+    color: #f2e9e4;
+    border: 2px solid #f2e9e4;
+}
+
+.dark-mode .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #ffffff; /* Dark mode secondary button border */
+    color: #ffffff; /* Dark mode secondary button text color */
+}
+
+.dark-mode .btn-secondary:hover {
+    background-color: #ffffff; /* Dark mode secondary button hover */
+    color: #333333; /* Dark mode secondary button hover text color */
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .container {
+        max-width: 90vw;
+    }
+}
