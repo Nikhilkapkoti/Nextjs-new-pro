@@ -1,0 +1,333 @@
+.aboutMain {
+  padding: 1rem;
+  padding-top: 5rem; /* Clear sticky navbar */
+  min-height: calc(100vh - 5rem); /* Adjust for navbar */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aboutContainer {
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem; /* Gap from Header */
+}
+
+.aboutContainer h2 {
+  font-size: 1.25rem;
+}
+
+.aboutContainer h1 {
+  font-size: 2.25rem;
+  margin: 0.5rem 0;
+  color: #1f2937;
+}
+
+.profileSection {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.profileImage {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #764ba2;
+}
+
+.bio {
+  flex: 1;
+  text-align: left;
+}
+
+.bio p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoBoxes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.infoBox {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #764ba2;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+.infoBox:hover {
+  transform: translateY(-8px); /* Move up on hover */
+}
+
+.infoBox img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.infoBox p {
+  font-size: 0.9rem;
+}
+
+.toolsSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.toolsSection h4 {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.toolsContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toolImage {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.contactLinks {
+  margin-top: 4.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.contactLinks a {
+  font-size: 0.95rem;
+  color: #0070f3;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #0070f3;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contactLinks a:hover,
+.contactLinks a:focus {
+  background-color: #0070f3;
+  color: #ffffff;
+}
+
+/* Dark mode styles */
+.darkMode {
+  background-color: #1a1a1a;
+}
+
+.darkMode .aboutContainer h1 {
+  color: #f5f5f5;
+}
+
+.darkMode .aboutContainer h2 {
+  color: #d1d5db;
+}
+
+.darkMode .bio p {
+  color: #d1d5db;
+}
+
+.darkMode .infoBox {
+  background-color: #2a2a2a;
+  border-color: #a78bfa;
+}
+
+.darkMode .infoBox h4 {
+  color: #f5f5f5;
+}
+
+.darkMode .infoBox p {
+  color: #d1d5db;
+}
+
+.darkMode .toolsSection h4 {
+  color: #f5f5f5;
+}
+
+.darkMode .contactLinks a {
+  color: #a78bfa;
+  border-color: #a78bfa;
+}
+
+.darkMode .contactLinks a:hover,
+.darkMode .contactLinks a:focus {
+  background-color: #a78bfa;
+  color: #1a1a1a;
+}
+
+/* Disable hover effects on touch devices */
+@media (hover: none) {
+  .contactLinks a:hover,
+  .contactLinks a:focus {
+    background-color: transparent;
+    color: #0070f3;
+  }
+  .darkMode .contactLinks a:hover,
+  .darkMode .contactLinks a:focus {
+    background-color: transparent;
+    color: #a78bfa;
+  }
+  .infoBox:hover {
+    transform: none; /* Disable hover movement on touch */
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .aboutMain {
+    padding: 0.75rem;
+    padding-top: 4rem; /* Match Services, Projects, Contact */
+    min-height: calc(100vh - 4rem);
+  }
+
+  .aboutContainer {
+    margin-top: 2.5rem; /* Extra gap from Header */
+  }
+
+  .profileSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .profileImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bio {
+    text-align: center;
+  }
+
+  .infoBoxes {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .infoBox {
+    padding: 0.75rem;
+  }
+
+  .infoBox img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .infoBox h4 {
+    font-size: 1rem;
+  }
+
+  .infoBox p {
+    font-size: 0.85rem;
+  }
+
+  .toolsSection {
+    display: block; /* Vertical stack for mobile */
+  }
+
+  .toolsSection h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .toolsContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .toolImage {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contactLinks a {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .aboutContainer h1 {
+    font-size: 1.75rem;
+  }
+
+  .aboutContainer h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Very small screens (≤480px) */
+@media (max-width: 480px) {
+  .aboutMain {
+    padding-top: 3.5rem;
+  }
+
+  .aboutContainer {
+    margin-top: 2rem;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .infoBox {
+    padding: 0.5rem;
+  }
+
+  .infoBox img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .infoBox h4 {
+    font-size: 0.95rem;
+  }
+
+  .infoBox p {
+    font-size: 0.8rem;
+  }
+
+  .toolsSection h4 {
+    font-size: 0.95rem;
+  }
+
+  .toolImage {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contactLinks a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .aboutContainer h1 {
+    font-size: 1.5rem;
+  }
+
+  .aboutContainer h2 {
+    font-size: 0.95rem;
+  }
+}

@@ -1,75 +1,158 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #f5ebeb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .logo a {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .navLinks {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navLinks li {
-    margin-left: 1.5rem;
-  }
-  
-  .navLinks li a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .navLinks li a:hover {
-    color: #00f37e;
-  }
-  
-  .darkModeToggle {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: inherit;
-    cursor: pointer;
-    margin-left: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  .darkModeToggle:hover {
-    color: #31c78b;
-  }
-  
-  /* Dark mode styles */
-  
-  .dark-mode {
-    background-color: #1a1a1a; /* Dark mode background */
-    color: #ffffff; /* Dark mode text color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f5ebeb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-  
-  .dark-mode .navbar {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
-    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+
+.logo a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+
+.navLinks li {
+  margin-left: 1.5rem;
+}
+
+.navLinks li a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #00f37e;
+}
+
+.darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.darkModeToggle:hover {
+  color: #31c78b;
+}
+
+.darkModeToggleDesktop {
+  display: flex;
+}
+
+.darkModeToggleMobile {
+  display: none;
+}
+
+.desktopDarkModeContainer {
+  display: flex;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburgerIcon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: currentColor;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburgerIcon:nth-child(2) {
+  width: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: inherit;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  .dark-mode .navbar a {
-    color: #f5f5f5;
+
+  .navLinksOpen {
+    display: flex;
   }
-  
-  .dark-mode .navbar a:hover {
-    color: #31c78b;
+
+  .navLinks li {
+    margin: 0.5rem 0;
   }
+
+  .hamburger {
+    display: block;
+  }
+
+  .darkModeToggleDesktop {
+    display: none;
+  }
+
+  .darkModeToggleMobile {
+    display: flex;
+  }
+
+  .desktopDarkModeContainer {
+    display: none;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .navbar a {
+  color: #f5f5f5;
+}
+
+.dark-mode .navbar a:hover {
+  color: #31c78b;
+}
+
+.dark-mode .navLinks {
+  background-color: #1e1e1e;
+}

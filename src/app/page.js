@@ -1,4 +1,4 @@
-import { AboutMe } from "./components/Aboutme";
+import  AboutMe  from "./components/Aboutme";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
