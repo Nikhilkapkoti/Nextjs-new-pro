@@ -10,7 +10,7 @@ const AboutMe = ({ darkMode }) => {
         <h1>About Me</h1>
         <div className={styles.profileSection}>
           <img
-            src="https://img.freepik.com/free-photo/man-with-camera-yellow-scene_23-2148184797.jpg?ga=GA1.1.635744474.1739200844&semt=ais_hybrid&w=740"
+            src="/ChatGPT Image Jun 13, 2025, 02_57_51 PM.png"
             alt="Profile Picture"
             className={styles.profileImage}
             loading="lazy"

@@ -13,7 +13,7 @@ export default function Header({ darkMode, toggleDarkMode }) {
     <main id='header' className={darkMode ? 'dark-mode' : ''}> {/* Apply dark-mode class conditionally */}
       <div className="container">
         {/* Add your image here */}
-        <img src="https://img.freepik.com/free-photo/portrait-fashionable-boy-drinking-within-frame_23-2148184623.jpg?ga=GA1.1.635744474.1739200844&semt=ais_hybrid&w=740" alt="Profile" className="header-image" />
+        <img src="/882227736362.jpg" alt="Profile" className="header-image" />
         <h2>Hi, I'm Nikhil</h2>
         <h1>fullstack web developer </h1>
         <h1>based in Dheradun.</h1>

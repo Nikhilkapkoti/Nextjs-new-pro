@@ -32,11 +32,11 @@ export default function Projects({ darkMode }) {
           </div>
         </div>
         <div className={styles.pogoBox}>
-          <img src="https://media.istockphoto.com/id/636803022/photo/news-on-laptop-screen.jpg?s=612x612&w=0&k=20&c=Gd0ekneVn1-NRgmk-gSHohLXUclMIfO4o2-lwxjg0qA=" alt="News Portal Project" />
+          <img src="https://media.istockphoto.com/id/599780174/photo/doctor-writing-a-medical-prescription-in-hospital.jpg?s=612x612&w=0&k=20&c=Wwt-o30jqsYrJrlMCC3zPacAKfQShugu-7GkSg_0cWE=" alt="News Portal Project" />
           <div className={styles.overlay}>
-            <h4>News Portal</h4>
-            <p>Latest Updates</p>
-            <a href="https://github.com/Nikhilkapkoti/project_newswesit_sportsdunia_project_" target="_blank" rel="noopener noreferrer" className={styles.actionButton}>
+            <h4>Appointment System</h4>
+            <p>Advanced Booking</p>
+            <a href="https://appointment-app-sage-theta.vercel.app/" target="_blank" rel="noopener noreferrer" className={styles.actionButton}>
               <img src="code.svg" alt="GitHub Code" />
             </a>
           </div>
